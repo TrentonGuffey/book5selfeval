@@ -12,9 +12,9 @@ document.addEventListener("change", (event) => {
 export const Sides = () => {
     let html = "<ul>"
 
-    const listItems = sideDishes.map(dish => {
+    const listItems = sideDishes.map(side => {
         return `<li>
-            <input type="radio" />
+            <input type="radio" name="sideDish" value="${side.id}"/> ${side.title}
         </li>`
     })
 
